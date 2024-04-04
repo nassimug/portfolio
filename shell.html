@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Mini Shell en C</title>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Nassim Madi</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">À propos</a></li>
+                    <li class="nav__item"><a href="index.html#education" class="nav__link">Formation</a></li>
+                    <li class="nav__item"><a href="index.html#experiences" class="nav__link">Expériences</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link">Compétences</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Projets</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--===== MAIN =====-->
+    <main class="l-main">
+        <section class="project-details bd-grid" id="project-details">
+            <h2 class="section-title">Nom du Projet</h2>
+        </section>
+        <!--===== SECTION PROJET MINI-SHELL EN C =====-->
+        <section class="project-details bd-grid" id="project-details">
+            <h2 class="section-title">Mini-Shell en C</h2>
+
+            <div class="project__container bd-grid">
+                <section>
+                    <h2>Description du projet</h2>
+                    <br>
+                    <p>Ce projet vise à implémenter un mini-shell en langage C qui simule certaines fonctionnalités d'un shell Unix classique. Il traite des commandes entrées par l'utilisateur, gère les arguments, les redirections et les pipelines.</p>
+                    <p>Le projet est divisé en plusieurs exercices qui progressent en complexité, offrant un aperçu complet de la programmation système en C.</p>
+                </section>
+                <br>
+                <!-- Exercices et tests -->
+                <section>
+                    <h2>Exercice 1 : Commandes sans arguments</h2>
+                    <br>
+                    <p>Implémentation d'un shell acceptant des commandes sans arguments. Le shell exécute ces commandes et attend leur terminaison avant de revenir à l'invite de commande.</p>
+                    <div class="project__img">
+            <img src="assets/img/shell/exo1.png" alt="Page d'inscription" width="500" height="500">
+        </div>
+                    <p>Exécuter <code>ls</code>, <code>pwd</code>, <code>whoami</code> sans arguments.</p>
+                    <p>Taper <code>exit</code> pour quitter le shell.</p>
+                    
+                    <br>
+                    <h2>Exercice 2 : Traitement des arguments</h2>
+                    <br>
+                    <p>Modification du shell pour accepter jusqu'à 16 arguments après la commande.</p>
+                    <div class="project__img">
+            <img src="assets/img/shell/exo2.png" alt="Page d'inscription" width="500" height="500">
+        </div>
+                    <ul>
+                        <li>Taper <code>echo Hello World</code> et vérifier que les arguments sont bien passés à la commande.</li>
+                    </ul>
+                    <br>
+                    <h2>Exercice 3 : Redirection de la sortie standard</h2>
+                    <br>
+                    <p>Le shell peut maintenant rediriger la sortie d'une commande vers un fichier.</p>
+                    <div class="project__img">
+            <img src="assets/img/shell/exo4.png" alt="Page d'inscription" width="500" height="500">
+        </div>
+                    <ul>
+                        <li>Exécuter <code>echo Hello World > test.txt</code> et vérifier le contenu de <code>test.txt</code>.</li>
+                    </ul>
+                    <br>
+                    <h2>Exercice 4 : Tubes simples</h2>
+                    <br>
+                    <p>Implémentation d'une version simplifiée du chaînage de commandes avec un tube.</p>
+                    <div class="project__img">
+            <img src="assets/img/shell/exo5.png" alt="Page d'inscription" width="500" height="500">
+        </div>
+                    <ul>
+                        <li>Chaîner <code>ls | wc -l</code> pour compter les fichiers dans le répertoire courant.</li>
+                    </ul>
+                    <br>
+                    <h2>Exercice 5 : Signaux</h2>
+                    <br>
+                    <p>Le shell gère maintenant le signal SIGINT pour interrompre les programmes en cours d'exécution.</p>
+                    <div class="project__img">
+            <img src="assets/img/shell/exo6.png" alt="Page d'inscription" width="500" height="500">
+        </div>
+                    <ul>
+                        <li>Lancer <code>sleep 10</code> puis appuyer sur CTRL+C pour interrompre le sommeil.</li>
+                    </ul>
+                    <br>
+                    <h2>Conclusion</h2>
+                    <br>
+                    <p>Ce projet de mini-shell en C permet de comprendre les bases de la création d'un interpréteur de commandes, de la gestion des processus et des signaux dans un système d'exploitation. Il offre une bonne introduction à la programmation système en C.</p>
+                </section>
+            </div>
+        </section>
+        <br>
+        <!--===== GITHUB LINK =====-->
+        <div class="project__github-link project__github-link-padding">
+            <p><strong>Pour en savoir plus sur les fonctionnalités et le code source du Shell, le projet est consultable sur <a href="https://github.com/nassimug" target="_blank">GitHub</a>.</strong></p>
+        </div>
+    </main>
+    <br>
+     <br>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Nassim Madi</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/nassim-madi-2ab5a4206" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/nassimug" class="footer__icon"><i class='bx bxl-github' ></i></a>
+        </div>
+        <p class="footer__copy">&#169; 2024 Nassim Madi. Tous droits réservés</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

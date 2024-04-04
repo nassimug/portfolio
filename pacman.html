@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Jeu Pacman</title>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Nassim Madi</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">À propos</a></li>
+                    <li class="nav__item"><a href="index.html#education" class="nav__link">Formation</a></li>
+                    <li class="nav__item"><a href="index.html#experiences" class="nav__link">Expériences</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link">Compétences</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Projets</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--===== MAIN =====-->
+    <main class="l-main">
+        <!--===== SECTION PROJET PACMAN =====-->
+        <section class="project-details bd-grid" id="project-details">
+            <h2 class="section-title">Nom du Projet</h2>
+        </section>
+        <section class="project-details bd-grid" id="project-pacman">
+            <h2 class="section-title">Projet Pacman en Java POO</h2>
+
+            <!-- Description du projet -->
+            <div class="project__description">
+                <h2>Introduction</h2>
+                <br>
+                <p>
+                  Réinventer le jeu classique de Pacman en appliquant les principes de la programmation orientée objet et les patterns de conception. Ce projet universitaire a impliqué une conception minutieuse pour un code propre, évolutif et facilement maintenable.
+                </p>
+                <p>
+                  La partie se déroule dans un labyrinthe, avec l'objectif de collecter les pacgommes tout en évitant les fantômes. Les règles ajoutées, comme les pacgommes bonus et les effets spéciaux, ont apporté une touche moderne au jeu original.
+                </p>
+                <!-- ... Autres détails ... -->
+            </div>
+
+            <!-- Images et descriptions des captures d'écran du jeu -->
+            <div class="project__img-description">
+                <h3 class="project__subtitle">Interface de jeu</h3>
+                <img src="assets/img/pacman/Debut pacman.png" alt="Capture d'écran de l'interface de jeu Pacman"  width="500" height="500">
+                <p>L'interface principale du jeu avec Pacman dans le labyrinthe et les fantômes à la poursuite.</p>
+            </div>
+
+            <!-- Prototype -->
+            <div class="project__img-description">
+                <h3 class="project__subtitle">Prototype</h3>
+                <img src="assets/img/prototype.png" alt="Capture d'écran du prototype de jeu Pacman"  width="500" height="500"> 
+                <p>Un prototype fonctionnel réalisé rapidement pour tester et déboguer les fonctionnalités clés du jeu. Cela a permis de comprendre les exigences et les difficultés techniques avant la conception finale.</p>
+            </div>
+
+           <br>
+
+        
+            <h2>Interactions et Effets des Pacgommes</h2>
+            <br>
+            <p>Dans notre version du jeu Pacman, le joueur navigue dans un labyrinthe pour manger des pacgommes tout en évitant les fantômes. Chaque pacgomme a un effet spécial sur Pacman ou sur le jeu :</p>
+            
+            <!-- Exemple pour la pacgomme bleue -->
+            <article class="pacgomme-effect">
+                <h3>Pacgomme Bleue</h3>
+                <img src="assets/img/pacman/mange_bleue.png" alt="Pacman mange une pacgomme bleue"  width="500" height="500">
+                <p><strong>Points :</strong> 100<br><strong>Effet :</strong> Aucune action.</p>
+            </article>
+            
+            <!-- Exemple pour la pacgomme violette -->
+            <article class="pacgomme-effect">
+                <h3>Pacgomme Violette</h3>
+                <img src="assets/img/pacman/mange pacgommes violet.png" alt="Pacman mange une pacgomme violette"  width="500" height="500">
+                <p><strong>Points :</strong> 300<br><strong>Effet :</strong> Pacman devient un invisible pour les fontomes. Sa couleur devient jaune pale et pourra les traverser sans perdre de vie.</p>
+            </article>
+            
+             <!-- Exemple pour la pacgomme violette -->
+            <article class="pacgomme-effect">
+                <h3>Pacgomme Orange</h3>
+                <img src="assets/img/pacman/Mange pacgomme bleue.png" alt="Pacman mange une pacgomme violette" width="500" height="500">
+                <p><strong>Points :</strong> 500<br><strong>Effet :</strong> Pacman devient un superpacman. Sa couleur devient orange et les fantômes deviennent bleus et se déplaçant plus lentement.</p>
+            </article>
+
+             <!-- Exemple pour la pacgomme violette -->
+            <article class="pacgomme-effect">
+                <h3>Pacgomme Verte</h3>
+                <img src="assets/img/pacman/mange pacgommes verte.png" alt="Pacman mange une pacgomme violette"  width="500" height="500">
+                <p><strong>Points :</strong> 1000<br><strong>Effet :</strong> Modifie la structure du labyrinthe</p>
+            </article>
+            <!-- Et ainsi de suite pour chaque couleur de pacgomme et ses effets... -->
+            
+
+            <section class="game-rules">
+                <h3>Règles Additionnelles</h3>
+              
+                <ul>
+                    <li> • Pacman commence avec trois vies.</li>
+                    <li> • Une vie supplémentaire est accordée après avoir dépassé 5000 points.</li>
+                    <li> • Les fantômes se déplacent aléatoirement et changent de direction au contact des murs.</li>
+                    <li> • Le jeu se termine lorsque toutes les pacgommes sont mangées ou que Pacman perd toutes ses vies.</li>
+                </ul>
+            </section>
+            <br>
+             <!-- Conclusion ou remarques supplémentaires -->
+            <div class="project__conclusion">
+                <h2 class="project__subtitle">Conclusion</h2>
+                <br>
+                <p>
+                  Ce projet Pacman a été un excellent terrain d'apprentissage pour explorer en profondeur la programmation orientée objet et les principes de conception logicielle.
+                </p>
+            </div>
+        </section>
+         <br>
+                <!--===== GITHUB LINK =====-->
+        <div class="project__github-link project__github-link-padding">
+            <p><strong>Pour en savoir plus sur les fonctionnalités et le code source du jeu, le projet est consultable sur <a href="https://github.com/nassimug" target="_blank">GitHub</a>.</strong></p>
+        </div>
+
+    </main>
+<br>
+<br>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Nassim Madi</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/nassim-madi-2ab5a4206" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/nassimug" class="footer__icon"><i class='bx bxl-github' ></i></a>
+        </div>
+        <p class="footer__copy">&#169; 2024 Nassim Madi. Tous droits réservés</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
