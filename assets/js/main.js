@@ -43,14 +43,12 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 
 /*===== SCROLL REVEAL ANIMATION =====*/
-document.addEventListener('DOMContentLoaded', function() {
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2000,
     delay: 200,
 //     reset: true
-});
 });
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
