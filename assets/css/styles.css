@@ -615,3 +615,12 @@ body {
 .project__github-link-padding {
     padding-left: 40px; /* ou la quantité d'espace que vous souhaitez */
 }
+/* Par exemple, pour les écrans de moins de 768 pixels de largeur */
+@media only screen and (max-width: 768px) {
+    .home__img {
+        margin-top: 20px; /* Ajustez cette valeur selon vos besoins */
+        display: flex;
+        justify-content: center;
+    }
+}
+
